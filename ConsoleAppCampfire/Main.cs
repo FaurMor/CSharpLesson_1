@@ -12,7 +12,7 @@ while (!Unit1.IsDead() && !Unit2.IsDead())
     Console.WriteLine($"{Unit1.Name} нанес урон {Unit2.Name}. У {Unit2.Name} осталось {Unit2.Health.ToString("00")} HP!");
 }
 
-if (Unit1.Health > 0)
+if (!Unit1.IsDead())
         Console.WriteLine($"{Unit1.Name} победил!!");
 else    Console.WriteLine($"{Unit2.Name} победил!!");
 
